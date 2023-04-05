@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Table Generator</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="script.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+  <h1>Table Generator</h1>
+
+
+  <form id="invoerTabel">
+    <label>Aantal kolomen:</label> <input type="number" min="1" max="25" id="cols" required>
+    <br>
+    <br>
+    <label>Aantal rijen:</label> <input type="number" min="1" max="25" id="rows" required> <br>
+    <br>
+    <label>Kies de kleuren:</label> <input type="color" id="kleur1" required>
+    <input type="color" id="kleur2" required>
+    <input type="color" id="kleur3" required>
+    <br>
+    <br>
+    <button type="button" onclick="createTable()">Genereer tabel</button>
+    <br>
+    <br>
+  </form>
+  <div id="errorMsg"></div>
+
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+
+  <br>
+  <br>
+
+  <div id="tableDiv"></div>
+</body>
+
+</html>
