@@ -5,7 +5,6 @@ function createTable() {
   var rows = document.getElementById("rows").value;
   var cols = document.getElementById("cols").value;
 
-  // Validate the input values to make sure they're within the range we want
   var rowsRegex = /^[1-9]$|^1\d$|^2[0-5]$/;
   var colsRegex = /^[1-9]$|^1\d$|^2[0-5]$/;
   if (!rowsRegex.test(rows) || !colsRegex.test(cols)) {
